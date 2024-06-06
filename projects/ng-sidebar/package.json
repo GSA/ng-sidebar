@@ -1,6 +1,6 @@
 {
-  "name": "ng-sidebar-v2",
-  "version": "17.0.1",
+  "name": "ng-sidebar-v3",
+  "version": "3.0.1",
   "description": "Angular sidebar component.",
   "peerDependencies": {
     "@angular/common": "^17.3.10",
