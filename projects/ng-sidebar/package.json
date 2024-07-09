@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khgsa/ng-sidebar.git"
+    "url": "https://github.com/GSA/ng-sidebar.git"
   },
-  "homepage": "https://github.com/khgsa/ng-sidebar",
+  "homepage": "https://github.com/GSA/ng-sidebar",
   "bugs": {
-    "url": "https://github.com/khgsa/ng-sidebar/issues"
+    "url": "https://github.com/GSA/ng-sidebar/issues"
   },
   "license": "MIT",
   "keywords": [
