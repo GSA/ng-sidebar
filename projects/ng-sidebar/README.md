@@ -6,7 +6,7 @@ Fork of https://github.com/tranminhtamapp/ng-sidebar.git
 
 | Angular          | ng-sidebar |
 |------------------|:---------:|
-| >=17.0.0 <18.0.0 |   v17.x   |
+| >=18.0.0 <19.0.0 |   v18.x   |
 
 An Angular sidebar component.
 
