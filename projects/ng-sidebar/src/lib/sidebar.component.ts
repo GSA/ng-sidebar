@@ -22,8 +22,8 @@ import { SidebarContainer } from './sidebar-container.component';
 import { isLTR, isIOS } from './utils';
 
 @Component({
-  selector: 'ng-sidebar',
-  template: `
+    selector: 'ng-sidebar',
+    template: `
     <aside #sidebar
       role="complementary"
       [attr.aria-hidden]="!opened"
@@ -37,7 +37,7 @@ import { isLTR, isIOS } from './utils';
       <ng-content></ng-content>
     </aside>
   `,
-  styles: [`
+    styles: [`
     .ng-sidebar {
       -webkit-overflow-scrolling: touch;
       overflow: auto;
@@ -83,7 +83,8 @@ import { isLTR, isIOS } from './utils';
       transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
     }
   `],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class Sidebar implements AfterContentInit, OnInit, OnChanges, OnDestroy {
   // `openedChange` allows for "2-way" data binding

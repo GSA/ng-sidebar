@@ -3,10 +3,11 @@ import { Directive } from '@angular/core';
 import { Sidebar } from './sidebar.component';
 
 @Directive({
-  selector: '[closeSidebar]',
-  host: {
-    '(click)': '_onClick()'
-  }
+    selector: '[closeSidebar]',
+    host: {
+        '(click)': '_onClick()'
+    },
+    standalone: false
 })
 export class CloseSidebar {
   constructor(private _sidebar: Sidebar) {}

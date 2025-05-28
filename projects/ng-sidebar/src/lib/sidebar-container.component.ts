@@ -18,8 +18,8 @@ import { Sidebar } from './sidebar.component';
 
 // Based on https://github.com/angular/material2/tree/master/src/lib/sidenav
 @Component({
-  selector: 'ng-sidebar-container',
-  template: `
+    selector: 'ng-sidebar-container',
+    template: `
     <div *ngIf="showBackdrop"
       aria-hidden="true"
       class="ng-sidebar__backdrop"
@@ -35,7 +35,7 @@ import { Sidebar } from './sidebar.component';
       <ng-content select="[ng-sidebar-content]"></ng-content>
     </div>
   `,
-  styles: [`
+    styles: [`
     :host {
       box-sizing: border-box;
       display: block;
@@ -72,7 +72,8 @@ import { Sidebar } from './sidebar.component';
       transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1), padding 0.3s cubic-bezier(0, 0, 0.3, 1);
     }
   `],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class SidebarContainer implements AfterContentInit, OnChanges, OnDestroy {
   @Input() animate: boolean = true;
